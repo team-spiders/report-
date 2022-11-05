@@ -17,8 +17,8 @@ Face detection employs classifiers, which are algorithms that determine whether 
 ## Haar Cascade:
 
 The Haar Cascade classifier divides the pixels in the image into squares depending on their functions using the Haar Wavelet approach. The "features" that are detected are computed using "integral image" principles. The Ada-boost learning algorithm is used by Haar Cascades, which picks a small number of crucial features from a huge set to get an effective output. Cascading techniques are then used by classifiers to recognize faces in images. Some Haar-Features are listed below.
+![image](https://github.com/team-spiders/images/blob/main/face%20detection%201.png)
 
-![image](https://user-images.githubusercontent.com/115747921/200088402-7dec1445-99e2-4dda-8299-e9f01257e665.png)
 ```
                        Fig 1: Haar feature extraction kernels
 ```
@@ -51,7 +51,7 @@ we have taken various wide range as well as short range images along with vertic
 
 
 
-![image](https://user-images.githubusercontent.com/115747921/200090177-f710acc8-34a0-4fc4-9059-ee90533feec3.png)
+![image](https://github.com/team-spiders/images/blob/main/face%202.png)
 ```
     fig 2: Custom data-set with 6 different challenging aspects of object detection
 ```
