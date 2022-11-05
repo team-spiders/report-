@@ -36,17 +36,25 @@ For custom dataset we have used Q51 13 megapixels camera, in order to maintain p
  For custom dataset we have divided each team members image dataset into 6 sub folders of 6 challenging aspects of object detection according to the variations and orientations and illumination conditions:
 
 
-1) *Viewpoint variation*
+1) ***Viewpoint variation***
+![image](https://github.com/team-spiders/images/blob/main/face%209%20viewpoint.png)
 
-2) *Deformation*
 
-3) *Occlusion*
+2)***Deformation***
+![image](https://github.com/team-spiders/images/blob/main/face%2014%20deformation.png)
 
-4) *Illumination conditions*
+3) ***Occlusion***
+![image](https://github.com/team-spiders/images/blob/main/face%2010%20occlusion.png)
 
-5) *Cluttered or textured background* 
 
-6) *Intra class variation* 
+4) ***Illumination conditions***
+![image](https://github.com/team-spiders/images/blob/main/face%2012%20illumination.png)
+
+5) ***Cluttered or textured background***
+![image](https://github.com/team-spiders/images/blob/main/face%2011%20cluttered.png)
+
+6) ***Intra class variation***
+![image](https://github.com/team-spiders/images/blob/main/face%2013%20intra-class.png)
 
 
 
@@ -79,7 +87,7 @@ And a negative image is everything else which we don't have to detect.
  *above mentioned figure represents custom made negative images*
 
  
- II) ## Public Dataset:
+ ## II) Public Dataset:
 
 1. ***Positive Samples***
 ```
@@ -120,18 +128,25 @@ All the Negative samples were converted to gray scale and cropped to same size a
 ## Code Snippets for Positive Dataset Preprocessing
 
  --------------------------------------------------------------------------------------- 
- ![image](https://github.com/team-spiders/images/blob/main/face%204.png)
+
+i) augmentation
+
+![image](https://github.com/team-spiders/images/blob/main/face%204.png)
 
 
 ***Each image is augmented to further increasing the training samples size as well as to add***
 
 -------------------------------------------------------------------------------------------
 
+ii) conversion of RGB to Grayscale
+
 ![image](https://github.com/team-spiders/images/blob/main/face%205.png)
  
  ***Convert image from RGB to Grayscale***
  
  ---------------------------------------------------------------------------------------
+ 
+ iii) Shuffling the custom positive samples and cropping
  
  ![image](https://github.com/team-spiders/images/blob/main/face%206.png)
  
