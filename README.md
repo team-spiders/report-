@@ -17,6 +17,8 @@ Face detection employs classifiers, which are algorithms that determine whether 
 ## Haar Cascade:
 
 The Haar Cascade classifier divides the pixels in the image into squares depending on their functions using the Haar Wavelet approach. The "features" that are detected are computed using "integral image" principles. The Ada-boost learning algorithm is used by Haar Cascades, which picks a small number of crucial features from a huge set to get an effective output. Cascading techniques are then used by classifiers to recognize faces in images. Some Haar-Features are listed below.
+
+
 ![image](https://github.com/team-spiders/images/blob/main/face%20detection%201.png)
 
 
@@ -58,15 +60,26 @@ we have taken various wide range as well as short range images along with vertic
 
 ## **Positive and Negative Images**
 
-It’s important to remember that this algorithm requires a lot of positive images of faces and negative images of non-faces to train this classifier. A positive image is one containing an object that must be detected and a negative image is the one that is not need to find or detect object.
+
 
 *In our case, for positive images we have taken self made face images into account, and for negative images we have taken images of non-face object that are available inside of our houses*.
 
+A positive image is one containing an object that must be detected.
+
+![image](https://github.com/team-spiders/images/blob/main/face%207.png)
+
+For example,  the above figure is the examples of our custom-made positive images that we will be putting as an object that needs to be detected using classifier.
+
+---------------------------------------------------------------------------------
+
+And a negative image is everything else which we don't have to detect.
+
+ ![image](https://github.com/team-spiders/images/blob/main/face%208.png)
+ 
+ *above mentioned figure represents custom made negative images*
 
  
- For example, fig 3 are the examples of our custom-made positive images that we will be putting as an object that needs to be detected using classifier.
- 
- ## Public Dataset:
+ II) ## Public Dataset:
 
 1. ***Positive Samples***
 ```
@@ -82,7 +95,8 @@ d: Variation: Eyeglasses, Hat, Bangs. Different emotion,and so on.
 ```
 a: Datasets from kaggle
 
-b: Datasets involves relevant pictures in the surrounding like furniture,vegetables, Notebooks and so on.  
+b: Datasets involves relevant pictures in the
+surrounding like furniture,vegetables, Notebooks and so on.  
 ```
  
 
@@ -119,8 +133,20 @@ All the Negative samples were converted to gray scale and cropped to same size a
  
  ---------------------------------------------------------------------------------------
  
- ![image] (https://github.com/team-spiders/images/blob/main/face%206.png)
+ ![image](https://github.com/team-spiders/images/blob/main/face%206.png)
  
- ***
- the above 1st information shows 
+ ***the above 1st information shows Before the train and test split of the dataset images are randomly shuffled for fair evaluation.similarly, followed by  pretrained haar cascade is used to cropp the faces from each sample positive images. Then each image is resized to (96,96) size. Only train datasets are cropped not the test***
+
+
+----------------------------------------------------------------------------------
+
+## *contribution of team member*
  
+| TEAM MEMBER  | STUDENT ID  | CONTRIBUTION  |
+|------------- | ----------- | ----------    |
+| Akash Ghimire|   12194814  |  Haar Cascade classifier training, evaluation & testing |
+| Bijay pariyar | 12194945   |  Data-set collection and report writing |
+| Keshav Adhikari | 12194874 | GitHub related work and management |
+| Pradip Thapa | 12194940    |  Environment setup and research  |
+
+
